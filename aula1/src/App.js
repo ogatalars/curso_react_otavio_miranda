@@ -1,6 +1,8 @@
 import logo from "./logo.svg";
 import "./App.css";
+// import { Component } from "react";
 
+//componente de função sem estado
 function App() {
   // é um componente porque está em letra maiscula
   return (
@@ -23,6 +25,13 @@ function App() {
     </>
   );
 }
+
+//componente de classe sem estado
+// class App extends Component {
+//   render() {
+//     return <h1> Oi</h1>;
+//   }
+// }
 
 // {} -> o que tiver dentro é lido como código
 // podemos colocar dentro de um fragmento do react <> </> e ai conseguimos usar elementos que não necessariamente estão juntos
