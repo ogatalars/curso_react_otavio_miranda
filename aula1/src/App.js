@@ -30,7 +30,12 @@ import { Component } from "react";
 class App extends Component {
   constructor(props) {
     super(props);
+    this.handleClick = this.handleClick.bind(this);
     this.state = { nome: "Ogata" };
+  }
+
+  handleClick() {
+    this.setState({ nome: "Felipe" });
   }
   render() {
     const { nome } = this.state;
@@ -40,13 +45,15 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <p>{1 + 2} Olá mundo</p>
           <p> {nome} </p>
+          <p onClick={this.handleClick}> </p>
           <a
             className="App-link"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            {" "}
+            This is the link
           </a>
         </header>
       </div>
